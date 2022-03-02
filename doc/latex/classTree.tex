@@ -1,0 +1,126 @@
+\hypertarget{classTree}{}\doxysection{Tree Class Reference}
+\label{classTree}\index{Tree@{Tree}}
+
+
+{\ttfamily \#include $<$Tree.\+h$>$}
+
+
+
+Inheritance diagram for Tree\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTree_ad376a7c639d857312f5de2ef47482f68}{Tree}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de \mbox{\hyperlink{classTree}{Tree}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classTree_a2348b20e31754ce28b00f6b6e9536644}{$\sim$\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de \mbox{\hyperlink{classTree}{Tree}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTree_a9a9a830dcdf10eb73fcb87241cc80770}{Insert}} (const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)=0
+\item 
+virtual void \mbox{\hyperlink{classTree_ac34e355f9ce2f77d62d1058ab2223b3b}{affichage}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classTree_af721bdfb942bf0afb9b21802dae35a47}{vider}} ()=0
+\item 
+virtual \mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classTree_a4cef92016550550994af323d5a5e6679}{Recherche}} (const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTree_a15567ea27ef35658bf6bddfd15e23864}{Arbre}}
+\item 
+class \mbox{\hyperlink{classTree_a1cc5ad854fa1a9e9c67a207a9d205291}{Arbre\+RN}}
+\item 
+class \mbox{\hyperlink{classTree_a6e332922765a19fc2a9593a20f26fc95}{Collection}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTree_ad376a7c639d857312f5de2ef47482f68}\label{classTree_ad376a7c639d857312f5de2ef47482f68}} 
+\index{Tree@{Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}}
+{\footnotesize\ttfamily Tree\+::\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de \mbox{\hyperlink{classTree}{Tree}}. 
+
+\mbox{\Hypertarget{classTree_a2348b20e31754ce28b00f6b6e9536644}\label{classTree_a2348b20e31754ce28b00f6b6e9536644}} 
+\index{Tree@{Tree}!````~Tree@{$\sim$Tree}}
+\index{````~Tree@{$\sim$Tree}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{$\sim$Tree()}{~Tree()}}
+{\footnotesize\ttfamily virtual Tree\+::$\sim$\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructeur de \mbox{\hyperlink{classTree}{Tree}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTree_ac34e355f9ce2f77d62d1058ab2223b3b}\label{classTree_ac34e355f9ce2f77d62d1058ab2223b3b}} 
+\index{Tree@{Tree}!affichage@{affichage}}
+\index{affichage@{affichage}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily virtual void Tree\+::affichage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArbre_a5f5e0b42d7ab88e9ea1ad3880dff15c8}{Arbre}}, and \mbox{\hyperlink{classArbreRN_afe03307552944e90a4f8e331fac065d6}{Arbre\+RN}}.
+
+\mbox{\Hypertarget{classTree_a9a9a830dcdf10eb73fcb87241cc80770}\label{classTree_a9a9a830dcdf10eb73fcb87241cc80770}} 
+\index{Tree@{Tree}!Insert@{Insert}}
+\index{Insert@{Insert}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily virtual void Tree\+::\+Insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArbre_a0d93e90cb64735d6df0f632ade4a8d0b}{Arbre}}, and \mbox{\hyperlink{classArbreRN_a1d387b2f424b63b3988614f9eac0b9ec}{Arbre\+RN}}.
+
+\mbox{\Hypertarget{classTree_a4cef92016550550994af323d5a5e6679}\label{classTree_a4cef92016550550994af323d5a5e6679}} 
+\index{Tree@{Tree}!Recherche@{Recherche}}
+\index{Recherche@{Recherche}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Recherche()}{Recherche()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classNoeud}{Noeud}}$\ast$ Tree\+::\+Recherche (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArbre_a11b8ebee01aed22dd8a57d898e1fb83c}{Arbre}}, and \mbox{\hyperlink{classArbreRN_a9185923294aa8e3095a62614c4f6f24e}{Arbre\+RN}}.
+
+\mbox{\Hypertarget{classTree_af721bdfb942bf0afb9b21802dae35a47}\label{classTree_af721bdfb942bf0afb9b21802dae35a47}} 
+\index{Tree@{Tree}!vider@{vider}}
+\index{vider@{vider}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{vider()}{vider()}}
+{\footnotesize\ttfamily virtual void Tree\+::vider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArbre_a2c2313c4c9921078f62ccd6de25bb6b6}{Arbre}}, and \mbox{\hyperlink{classArbreRN_a1d5e42a6c6085b5e4cbf54c3028aab77}{Arbre\+RN}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classTree_a15567ea27ef35658bf6bddfd15e23864}\label{classTree_a15567ea27ef35658bf6bddfd15e23864}} 
+\index{Tree@{Tree}!Arbre@{Arbre}}
+\index{Arbre@{Arbre}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Arbre}{Arbre}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classArbre}{Arbre}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classTree_a1cc5ad854fa1a9e9c67a207a9d205291}\label{classTree_a1cc5ad854fa1a9e9c67a207a9d205291}} 
+\index{Tree@{Tree}!ArbreRN@{ArbreRN}}
+\index{ArbreRN@{ArbreRN}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{ArbreRN}{ArbreRN}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classArbreRN}{Arbre\+RN}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classTree_a6e332922765a19fc2a9593a20f26fc95}\label{classTree_a6e332922765a19fc2a9593a20f26fc95}} 
+\index{Tree@{Tree}!Collection@{Collection}}
+\index{Collection@{Collection}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Collection}{Collection}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCollection}{Collection}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bbj/\+Téléchargements/\+Projet-\/2/\+Projet-\/2/src/\mbox{\hyperlink{Tree_8h}{Tree.\+h}}\end{DoxyCompactItemize}

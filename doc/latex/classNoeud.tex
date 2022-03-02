@@ -1,0 +1,126 @@
+\hypertarget{classNoeud}{}\doxysection{Noeud Class Reference}
+\label{classNoeud}\index{Noeud@{Noeud}}
+
+
+{\ttfamily \#include $<$Noeud.\+h$>$}
+
+
+
+Collaboration diagram for Noeud\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNoeud_a7d8424a0e7f0e695432885f3397fd9f3}{Noeud}} (const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un noeud qui lui attribue l\textquotesingle{}information e et contenant aucun fils. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNoeud_a7e6b05e6c7ce6b99c2e198334a44bb65}{$\sim$\+Noeud}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur d\textquotesingle{}un noeud qui met l\textquotesingle{}information à 0 et les pointeurs à nullptr. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classNoeud_a56344c70efa7b25340e627c003847502}{fg}}
+\begin{DoxyCompactList}\small\item\em Les données membres privées de la classe \mbox{\hyperlink{classNoeud}{Noeud}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classNoeud_a4e238f559ea132dfa11ed4990833c6bd}{fd}}
+\item 
+char \mbox{\hyperlink{classNoeud_a05163efa27fbb5ce1550ccd1f51a342f}{couleur}}
+\item 
+\mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \mbox{\hyperlink{classNoeud_a60494290773ff59cf3e113b5ba2d281d}{info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classNoeud_a1cc5ad854fa1a9e9c67a207a9d205291}{Arbre\+RN}}
+\item 
+class \mbox{\hyperlink{classNoeud_a15567ea27ef35658bf6bddfd15e23864}{Arbre}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNoeud_a7d8424a0e7f0e695432885f3397fd9f3}\label{classNoeud_a7d8424a0e7f0e695432885f3397fd9f3}} 
+\index{Noeud@{Noeud}!Noeud@{Noeud}}
+\index{Noeud@{Noeud}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{Noeud()}{Noeud()}}
+{\footnotesize\ttfamily Noeud\+::\+Noeud (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un noeud qui lui attribue l\textquotesingle{}information e et contenant aucun fils. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Element correspondant à l\textquotesingle{}information à attribuer au noeud. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNoeud_a7e6b05e6c7ce6b99c2e198334a44bb65}\label{classNoeud_a7e6b05e6c7ce6b99c2e198334a44bb65}} 
+\index{Noeud@{Noeud}!````~Noeud@{$\sim$Noeud}}
+\index{````~Noeud@{$\sim$Noeud}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{$\sim$Noeud()}{~Noeud()}}
+{\footnotesize\ttfamily Noeud\+::$\sim$\+Noeud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur d\textquotesingle{}un noeud qui met l\textquotesingle{}information à 0 et les pointeurs à nullptr. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNoeud_a15567ea27ef35658bf6bddfd15e23864}\label{classNoeud_a15567ea27ef35658bf6bddfd15e23864}} 
+\index{Noeud@{Noeud}!Arbre@{Arbre}}
+\index{Arbre@{Arbre}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{Arbre}{Arbre}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classArbre}{Arbre}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNoeud_a1cc5ad854fa1a9e9c67a207a9d205291}\label{classNoeud_a1cc5ad854fa1a9e9c67a207a9d205291}} 
+\index{Noeud@{Noeud}!ArbreRN@{ArbreRN}}
+\index{ArbreRN@{ArbreRN}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{ArbreRN}{ArbreRN}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classArbreRN}{Arbre\+RN}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNoeud_a05163efa27fbb5ce1550ccd1f51a342f}\label{classNoeud_a05163efa27fbb5ce1550ccd1f51a342f}} 
+\index{Noeud@{Noeud}!couleur@{couleur}}
+\index{couleur@{couleur}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{couleur}{couleur}}
+{\footnotesize\ttfamily char Noeud\+::couleur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNoeud_a4e238f559ea132dfa11ed4990833c6bd}\label{classNoeud_a4e238f559ea132dfa11ed4990833c6bd}} 
+\index{Noeud@{Noeud}!fd@{fd}}
+\index{fd@{fd}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{fd}{fd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNoeud}{Noeud}}$\ast$ Noeud\+::fd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNoeud_a56344c70efa7b25340e627c003847502}\label{classNoeud_a56344c70efa7b25340e627c003847502}} 
+\index{Noeud@{Noeud}!fg@{fg}}
+\index{fg@{fg}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{fg}{fg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNoeud}{Noeud}}$\ast$ Noeud\+::fg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Les données membres privées de la classe \mbox{\hyperlink{classNoeud}{Noeud}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fg} & \mbox{\hyperlink{classNoeud}{Noeud}} qui correspond au fils gauche. \\
+\hline
+{\em fd} & \mbox{\hyperlink{classNoeud}{Noeud}} qui correspond au fils droit. \\
+\hline
+{\em couleur} & Caractère qui correspond à la couleur du noeud. \\
+\hline
+{\em info} & Element qui correspond à l\textquotesingle{}information (entier) du noeud. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNoeud_a60494290773ff59cf3e113b5ba2d281d}\label{classNoeud_a60494290773ff59cf3e113b5ba2d281d}} 
+\index{Noeud@{Noeud}!info@{info}}
+\index{info@{info}!Noeud@{Noeud}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} Noeud\+::info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bbj/\+Téléchargements/\+Projet-\/2/\+Projet-\/2/src/\mbox{\hyperlink{Noeud_8h}{Noeud.\+h}}\item 
+/home/bbj/\+Téléchargements/\+Projet-\/2/\+Projet-\/2/src/\mbox{\hyperlink{Noeud_8cpp}{Noeud.\+cpp}}\end{DoxyCompactItemize}

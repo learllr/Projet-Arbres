@@ -1,0 +1,338 @@
+\hypertarget{classArbre}{}\doxysection{Arbre Class Reference}
+\label{classArbre}\index{Arbre@{Arbre}}
+
+
+{\ttfamily \#include $<$Arbre.\+h$>$}
+
+
+
+Inheritance diagram for Arbre\+:
+% FIG 0
+
+
+Collaboration diagram for Arbre\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArbre_a3e036506c7feabe95690949846108f86}{Arbre}} (char aff)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un arbre qui selon le type d\textquotesingle{}affichage que choisit l\textquotesingle{}utilisateur, affiche l\textquotesingle{}arbre graphiquement ou textuellement (préfixe). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArbre_ad5f22ec66953891aef2722438fb7c088}{$\sim$\+Arbre}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur d\textquotesingle{}un arbre qui vide l\textquotesingle{}arbre, met son nombre de noeud à 0 et supprime le noeud racine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_a9644b9e87e5224879d7e6026d92aaee6}{operator=}} (\mbox{\hyperlink{classArbre}{Arbre}} \&a2)
+\begin{DoxyCompactList}\small\item\em Surcharge d\textquotesingle{}opérateur d\textquotesingle{}affectation d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_a0d93e90cb64735d6df0f632ade4a8d0b}{Insert}} (const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)
+\begin{DoxyCompactList}\small\item\em Insère l\textquotesingle{}élément e dans l\textquotesingle{}arbre à partir d\textquotesingle{}un fonction récursive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_a5f5e0b42d7ab88e9ea1ad3880dff15c8}{affichage}} ()
+\begin{DoxyCompactList}\small\item\em Affichage d\textquotesingle{}un arbre selon le type que l\textquotesingle{}utilisateur a choisi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classArbre_a11b8ebee01aed22dd8a57d898e1fb83c}{Recherche}} (const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)
+\begin{DoxyCompactList}\small\item\em Recherche d\textquotesingle{}un élément e dans un arbre à partir d\textquotesingle{}une fonction récursive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_a2c2313c4c9921078f62ccd6de25bb6b6}{vider}} ()
+\begin{DoxyCompactList}\small\item\em Vide l\textquotesingle{}intégralité d\textquotesingle{}un arbre en utilisant une fonction récursive, met le nombre de noeud à 0 et supprime la racine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void(Arbre\+::$\ast$ \mbox{\hyperlink{classArbre_ab018d6519b257c333a02ed80ff3c9298}{Display}} )(\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Pointeur de fonction qui suivant le type d\textquotesingle{}affichage choisit par l\textquotesingle{}utilisateur pourra permettre d\textquotesingle{}être redirigé dans la fonction adéquate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classArbre_a320b7c8d5aa8d96a783aa1dab01ca8d8}{Inserertfrom}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&n, const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)
+\begin{DoxyCompactList}\small\item\em Insère l\textquotesingle{}élément e dans un sous-\/arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_ac78199b0ceab0538a44fd3bf53399b3b}{Affichage\+From\+CC}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n, int decalage)
+\begin{DoxyCompactList}\small\item\em Affichage de manière graphique d\textquotesingle{}un sous-\/arbre à partir du noeud n. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classArbre_aea3bf91f032fb664e9cb727120d501ed}{Recherche\+From}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n, const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&e)
+\begin{DoxyCompactList}\small\item\em Recherche un élément e dans les sous-\/arbres de n. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_ae44caaf6e059a4dfeedfccf8b58ab0ac}{affichagefrom\+Prefix}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Affichage de manière préfixe d\textquotesingle{}un sous-\/arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_a57154dc48559211510c3356c215f11c1}{Destructfrom}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&n)
+\begin{DoxyCompactList}\small\item\em Vide un sous-\/arbre à partir du noeud n. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_ad06c67ffd35838252250a0c49e52e77e}{pastefrom}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n, \mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&current)
+\begin{DoxyCompactList}\small\item\em Fait la copie profonde d\textquotesingle{}un autre arbre dans notre arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArbre_aadd7562784ec7c766897304b2420ed31}{affichagefrom\+C\+Cfirst}} (\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Affichage d\textquotesingle{}un arbre de manière graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$ \mbox{\hyperlink{classArbre_ade0c83be14ddbe6666a4f9c5dfc69a94}{Nracine}}
+\begin{DoxyCompactList}\small\item\em Les données membres privées de la classe \mbox{\hyperlink{classArbre}{Arbre}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArbre_a0262c6acd342d79018fdd935ffefa8c3}{nbnoeud}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArbre_a3e036506c7feabe95690949846108f86}\label{classArbre_a3e036506c7feabe95690949846108f86}} 
+\index{Arbre@{Arbre}!Arbre@{Arbre}}
+\index{Arbre@{Arbre}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Arbre()}{Arbre()}}
+{\footnotesize\ttfamily Arbre\+::\+Arbre (\begin{DoxyParamCaption}\item[{char}]{aff }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un arbre qui selon le type d\textquotesingle{}affichage que choisit l\textquotesingle{}utilisateur, affiche l\textquotesingle{}arbre graphiquement ou textuellement (préfixe). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aff} & Caractère qui contient la lettre que l\textquotesingle{}utilisateur a choisit pour l\textquotesingle{}affichage de l\textquotesingle{}arbre (p -\/$>$ préfixe, autre -\/$>$ affichage graphique). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_ad5f22ec66953891aef2722438fb7c088}\label{classArbre_ad5f22ec66953891aef2722438fb7c088}} 
+\index{Arbre@{Arbre}!````~Arbre@{$\sim$Arbre}}
+\index{````~Arbre@{$\sim$Arbre}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{$\sim$Arbre()}{~Arbre()}}
+{\footnotesize\ttfamily Arbre\+::$\sim$\+Arbre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur d\textquotesingle{}un arbre qui vide l\textquotesingle{}arbre, met son nombre de noeud à 0 et supprime le noeud racine. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArbre_a5f5e0b42d7ab88e9ea1ad3880dff15c8}\label{classArbre_a5f5e0b42d7ab88e9ea1ad3880dff15c8}} 
+\index{Arbre@{Arbre}!affichage@{affichage}}
+\index{affichage@{affichage}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily Arbre\+::affichage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Affichage d\textquotesingle{}un arbre selon le type que l\textquotesingle{}utilisateur a choisi. 
+
+
+
+Implements \mbox{\hyperlink{classTree_ac34e355f9ce2f77d62d1058ab2223b3b}{Tree}}.
+
+\mbox{\Hypertarget{classArbre_ac78199b0ceab0538a44fd3bf53399b3b}\label{classArbre_ac78199b0ceab0538a44fd3bf53399b3b}} 
+\index{Arbre@{Arbre}!AffichageFromCC@{AffichageFromCC}}
+\index{AffichageFromCC@{AffichageFromCC}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{AffichageFromCC()}{AffichageFromCC()}}
+{\footnotesize\ttfamily Arbre\+::\+Affichage\+From\+CC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$}]{n,  }\item[{int}]{decalage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Affichage de manière graphique d\textquotesingle{}un sous-\/arbre à partir du noeud n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on va afficher ses sous-\/arbres de manière graphique. \\
+\hline
+{\em decalage} & Entier qui correspond au nombre de décalage entre les valeurs de notre arbre. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_aadd7562784ec7c766897304b2420ed31}\label{classArbre_aadd7562784ec7c766897304b2420ed31}} 
+\index{Arbre@{Arbre}!affichagefromCCfirst@{affichagefromCCfirst}}
+\index{affichagefromCCfirst@{affichagefromCCfirst}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{affichagefromCCfirst()}{affichagefromCCfirst()}}
+{\footnotesize\ttfamily Arbre\+::affichagefrom\+C\+Cfirst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Affichage d\textquotesingle{}un arbre de manière graphique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on va afficher ses sous-\/arbres en utilisant une fonction récursive. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_ae44caaf6e059a4dfeedfccf8b58ab0ac}\label{classArbre_ae44caaf6e059a4dfeedfccf8b58ab0ac}} 
+\index{Arbre@{Arbre}!affichagefromPrefix@{affichagefromPrefix}}
+\index{affichagefromPrefix@{affichagefromPrefix}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{affichagefromPrefix()}{affichagefromPrefix()}}
+{\footnotesize\ttfamily Arbre\+::affichagefrom\+Prefix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Affichage de manière préfixe d\textquotesingle{}un sous-\/arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on va afficher ses sous-\/arbres. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_a57154dc48559211510c3356c215f11c1}\label{classArbre_a57154dc48559211510c3356c215f11c1}} 
+\index{Arbre@{Arbre}!Destructfrom@{Destructfrom}}
+\index{Destructfrom@{Destructfrom}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Destructfrom()}{Destructfrom()}}
+{\footnotesize\ttfamily Arbre\+::\+Destructfrom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vide un sous-\/arbre à partir du noeud n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on vide ses sous-\/arbres. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_a320b7c8d5aa8d96a783aa1dab01ca8d8}\label{classArbre_a320b7c8d5aa8d96a783aa1dab01ca8d8}} 
+\index{Arbre@{Arbre}!Inserertfrom@{Inserertfrom}}
+\index{Inserertfrom@{Inserertfrom}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Inserertfrom()}{Inserertfrom()}}
+{\footnotesize\ttfamily Arbre\+::\+Inserertfrom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&}]{n,  }\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Insère l\textquotesingle{}élément e dans un sous-\/arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on souhaite insérer l\textquotesingle{}élément e. \\
+\hline
+{\em e} & Element (entier) à insérer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_a0d93e90cb64735d6df0f632ade4a8d0b}\label{classArbre_a0d93e90cb64735d6df0f632ade4a8d0b}} 
+\index{Arbre@{Arbre}!Insert@{Insert}}
+\index{Insert@{Insert}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily Arbre\+::\+Insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Insère l\textquotesingle{}élément e dans l\textquotesingle{}arbre à partir d\textquotesingle{}un fonction récursive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Element (entier) à insérer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTree_a9a9a830dcdf10eb73fcb87241cc80770}{Tree}}.
+
+\mbox{\Hypertarget{classArbre_a9644b9e87e5224879d7e6026d92aaee6}\label{classArbre_a9644b9e87e5224879d7e6026d92aaee6}} 
+\index{Arbre@{Arbre}!operator=@{operator=}}
+\index{operator=@{operator=}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily Arbre\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArbre}{Arbre}} \&}]{a2 }\end{DoxyParamCaption})}
+
+
+
+Surcharge d\textquotesingle{}opérateur d\textquotesingle{}affectation d\textquotesingle{}un arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a2} & \mbox{\hyperlink{classArbre}{Arbre}} que l\textquotesingle{}on souhaite copier et mettre dans notre arbre. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_ad06c67ffd35838252250a0c49e52e77e}\label{classArbre_ad06c67ffd35838252250a0c49e52e77e}} 
+\index{Arbre@{Arbre}!pastefrom@{pastefrom}}
+\index{pastefrom@{pastefrom}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{pastefrom()}{pastefrom()}}
+{\footnotesize\ttfamily Arbre\+::pastefrom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$}]{n,  }\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$\&}]{current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fait la copie profonde d\textquotesingle{}un autre arbre dans notre arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} contenant la racine de l\textquotesingle{}autre arbre. \\
+\hline
+{\em current} & \mbox{\hyperlink{classNoeud}{Noeud}} contenant la racine de notre arbre. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_a11b8ebee01aed22dd8a57d898e1fb83c}\label{classArbre_a11b8ebee01aed22dd8a57d898e1fb83c}} 
+\index{Arbre@{Arbre}!Recherche@{Recherche}}
+\index{Recherche@{Recherche}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Recherche()}{Recherche()}}
+{\footnotesize\ttfamily $\ast$ Arbre\+::\+Recherche (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Recherche d\textquotesingle{}un élément e dans un arbre à partir d\textquotesingle{}une fonction récursive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Element que l\textquotesingle{}on souhaite rechercher dans un arbre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne un pointeur sur un noeud. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTree_a4cef92016550550994af323d5a5e6679}{Tree}}.
+
+\mbox{\Hypertarget{classArbre_aea3bf91f032fb664e9cb727120d501ed}\label{classArbre_aea3bf91f032fb664e9cb727120d501ed}} 
+\index{Arbre@{Arbre}!RechercheFrom@{RechercheFrom}}
+\index{RechercheFrom@{RechercheFrom}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{RechercheFrom()}{RechercheFrom()}}
+{\footnotesize\ttfamily Arbre\+::\+Recherche\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$}]{n,  }\item[{const \mbox{\hyperlink{Element_8h_a17f27895c682e0ef36fa430ec3c815df}{Element}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recherche un élément e dans les sous-\/arbres de n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on souhaite rechercher l\textquotesingle{}élément e. \\
+\hline
+{\em e} & Element (entier) à rechercher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne un pointeur sur un noeud. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbre_a2c2313c4c9921078f62ccd6de25bb6b6}\label{classArbre_a2c2313c4c9921078f62ccd6de25bb6b6}} 
+\index{Arbre@{Arbre}!vider@{vider}}
+\index{vider@{vider}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{vider()}{vider()}}
+{\footnotesize\ttfamily Arbre\+::vider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Vide l\textquotesingle{}intégralité d\textquotesingle{}un arbre en utilisant une fonction récursive, met le nombre de noeud à 0 et supprime la racine. 
+
+
+
+Implements \mbox{\hyperlink{classTree_af721bdfb942bf0afb9b21802dae35a47}{Tree}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classArbre_ab018d6519b257c333a02ed80ff3c9298}\label{classArbre_ab018d6519b257c333a02ed80ff3c9298}} 
+\index{Arbre@{Arbre}!Display@{Display}}
+\index{Display@{Display}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Display}{Display}}
+{\footnotesize\ttfamily (Arbre\+::$\ast$ Arbre\+::\+Display)(\mbox{\hyperlink{classNoeud}{Noeud}} $\ast$n) -\/$>$ void}
+
+
+
+Pointeur de fonction qui suivant le type d\textquotesingle{}affichage choisit par l\textquotesingle{}utilisateur pourra permettre d\textquotesingle{}être redirigé dans la fonction adéquate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \mbox{\hyperlink{classNoeud}{Noeud}} à partir duquel on va afficher ses sous-\/arbres. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbre_a0262c6acd342d79018fdd935ffefa8c3}\label{classArbre_a0262c6acd342d79018fdd935ffefa8c3}} 
+\index{Arbre@{Arbre}!nbnoeud@{nbnoeud}}
+\index{nbnoeud@{nbnoeud}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{nbnoeud}{nbnoeud}}
+{\footnotesize\ttfamily int Arbre\+::nbnoeud\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classArbre_ade0c83be14ddbe6666a4f9c5dfc69a94}\label{classArbre_ade0c83be14ddbe6666a4f9c5dfc69a94}} 
+\index{Arbre@{Arbre}!Nracine@{Nracine}}
+\index{Nracine@{Nracine}!Arbre@{Arbre}}
+\doxysubsubsection{\texorpdfstring{Nracine}{Nracine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNoeud}{Noeud}}$\ast$ Arbre\+::\+Nracine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Les données membres privées de la classe \mbox{\hyperlink{classArbre}{Arbre}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nracine} & Pointeur sur \mbox{\hyperlink{classNoeud}{Noeud}} qui correspond à la racine. \\
+\hline
+{\em nbnoeud} & Entier positif qui contient le nombre de noeud de notre arbre. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bbj/\+Téléchargements/\+Projet-\/2/\+Projet-\/2/src/\mbox{\hyperlink{Arbre_8h}{Arbre.\+h}}\item 
+/home/bbj/\+Téléchargements/\+Projet-\/2/\+Projet-\/2/src/\mbox{\hyperlink{Arbre_8cpp}{Arbre.\+cpp}}\end{DoxyCompactItemize}
